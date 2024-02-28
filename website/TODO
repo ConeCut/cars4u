@@ -1,0 +1,17 @@
+Style for dropdown and post pages
+Add liking system
+Add a reply system to the posts (database - POST ID -> Post Reply by Post ID -> ex. ID = 1 =>
+FOREIGN KEY Replies with FOREIGN KEY ID = 1 will be for post with FOREIGN KEY ID = 1
+Add ADMIN ROLES to users database (One/More users that can delete posts) if(isset(...session user admin)) =>
+Show delete button and edit buttons for the post
+else
+dont
+Add a "STARRING" (saving) system for each posts and a page dedicated to the user's starred posts
+
+Brukerstøtte
+Veiledning
+Tidslinje
+SERVER
+MD README FILE
+
+Pretty much that's it

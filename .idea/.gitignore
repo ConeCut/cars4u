@@ -9,3 +9,6 @@
 
 ../.idea
 ../Cars4U.iml
+../composer.json
+../composer.lock
+../vendor
