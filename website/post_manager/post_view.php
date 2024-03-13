@@ -1,8 +1,8 @@
 <?php
 require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\config_session.inc.php';
-require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\signup_view.inc.php';
-require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\login_view.inc.php';
 require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\dbh.inc.php';
+require_once 'reply_manager.php';
+require_once 'reply_view.php';
 ?>
 
 <?php
@@ -22,9 +22,16 @@ function justPost(){
             <img src="img/' . $post['photo'] . '" alt="Car Photo" class="postImg">
             <p class="carInfo">' . $post['carinfo'] . '</p>
             <p class="postParagraph">' . $post['post'] . '</p>
-            </div>';
+            <div class="replyShow">' . showReplies() . '</div>';
+            if (isset($_SESSION["user_id"])){
+                echo '<button class="like" onclick="likesUp()"></button>';
+                echo '<p class="like_text">Like</p>';
+            } else{
+                echo 'You must be logged in to like posts';
+            }
+            echo '</div>';
+            echo '<script src="../../website/script/script.js"></script>';
         }
-
         }
     return $result;
 }

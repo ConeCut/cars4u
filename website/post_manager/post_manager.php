@@ -12,6 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $post = $_POST['Post'];
     $carinfo = $_POST['carinfo'];
     $photo = $_POST['photo'];
+    //TODO: Find a way to insert the picture from client side in website img folder to be accessible
+
     $likes = 0;
     function set_post(object $pdo, string $username, string $post, int $likes, string $carinfo, string $photo)
     {

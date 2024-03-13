@@ -102,3 +102,35 @@ main {
     text-align: left;
     font-size: 2vh;
 }
+
+.dropDownLink{
+    padding: 2.5vh;
+}
+
+.dropDownLink:hover{
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+.homeButton{
+    padding: 2.5vh;
+}
+
+.postList{
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.like{
+    background-image: url("../../website/img/like.jpg");
+    width: 7.5vh;
+    height: 5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.like_text{
+    font-size: 2vh;
+    font-family: "OCR A Extended", serif;
+}

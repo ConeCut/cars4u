@@ -21,10 +21,10 @@ require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\login_v
 
 
         <div id="dropDownContent">
-            <div class="dropDownLink">FAQ</div>
-            <div class="dropDownLink">Contact us</div>
-            <div class="dropDownLink">Our products</div>
-            <div class="dropDownLink">About</div>
+            <div class="dropDownLink" onclick="redirectFAQ()">FAQ</div>
+            <div class="dropDownLink" onclick="redirectContact()">Contact us</div>
+            <div class="dropDownLink" onclick="redirectProducts()">Our products</div>
+            <div class="dropDownLink" onclick="redirectAbout()">About</div>
         </div>
     </div>
     <a href="index.php" class="navContent">Home</a>
@@ -42,8 +42,11 @@ require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\login_v
         <div class="title">Most Recent Posts</div>
         <?php
         require 'post_manager/post_view.php';
-            justPost();
+        echo '<div class="postList">';
+        justPost();
+        echo '</div>';
         ?>
+
     </div>
 
 </main>
