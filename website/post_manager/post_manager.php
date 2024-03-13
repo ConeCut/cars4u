@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $likes = 0;
     function set_post(object $pdo, string $username, string $post, int $likes, string $carinfo, string $photo)
     {
-        $likes = 0;
         $query = "INSERT INTO posts (username, post, likes, carinfo, photo) VALUES (:username, :post, :likes, :carinfo, :photo);";
         $stmt = $pdo->prepare($query);
         $stmt->bindParam(":username", $username);
