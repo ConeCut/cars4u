@@ -1,7 +1,7 @@
 <?php
-require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\config_session.inc.php';
-require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\signup_view.inc.php';
-require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\login_view.inc.php';
+require_once 'login/includes/config_session.inc.php';
+require_once 'login/includes/signup_view.inc.php';
+require_once 'login/includes/login_view.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

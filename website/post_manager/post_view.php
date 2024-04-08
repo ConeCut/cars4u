@@ -1,11 +1,9 @@
 <?php
-require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\config_session.inc.php';
-require_once 'C:\Users\Cosmin\IdeaProjects\Cars4U\website\login\includes\dbh.inc.php';
+require_once 'login/includes/dbh.inc.php';
+require_once "login/includes/config_session.inc.php";
 require_once 'reply_manager.php';
 require_once 'reply_view.php';
-?>
 
-<?php
 global $pdo;
 function justPost(){
     global $pdo;
