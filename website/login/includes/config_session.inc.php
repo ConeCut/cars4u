@@ -7,9 +7,8 @@ setcookie('cookiename', 'data', time()+60*60*24*365, '/', $domain, false);
 
 session_set_cookie_params([
     'lifetime' => 1800,
-    'domain' => 'localhost',
     'path' => '/',
-    'secure' => true,
+    'secure' => false,
     'httponly' => true
 ]);
 
