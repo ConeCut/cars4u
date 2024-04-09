@@ -2,6 +2,8 @@
 
 ini_set('session.use_only_cookies', 1);
 ini_set('session.use_strict_mode', 1);
+$domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false;
+setcookie('cookiename', 'data', time()+60*60*24*365, '/', $domain, false);
 
 session_set_cookie_params([
     'lifetime' => 1800,
