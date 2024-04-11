@@ -1,6 +1,7 @@
 <?php
-
 declare(strict_types = 1);
+require_once 'signup_view.inc.php';
+
 
 function is_input_empty(string $username, string $pwd, string $email){
     if (empty($username) || empty($pwd) || empty($email)){
@@ -35,5 +36,5 @@ function is_email_registered(object $pdo, string $email){
 }
 
 function create_user(object $pdo, string $pwd, string $username, string $email){
-    set_user($pdo, $pwd, $username, $email);
+         set_user($pdo, $pwd, $username, $email);
 }

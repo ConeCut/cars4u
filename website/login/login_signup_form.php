@@ -24,7 +24,6 @@ require_once 'includes/login_view.inc.php';
 
 </h3>
 <?php
-
 if (!isset($_SESSION["user_id"])){ ?>
 
 <div class="login_form_flex">
@@ -46,12 +45,15 @@ check_login_errors();
     <?php
     signup_inputs()
     ?>
+    <div class="center">
+        <button onclick="redirectHome()" class="login_button" style="margin: 2vh">Home Page</button>
+    </div>
     <button class="login_button">Signup</button>
 </form>
 </div>
 <?php
 check_signup_errors();
-?>
+ ?>
 <?php
 
 if (isset($_SESSION["user_id"])){ ?>
@@ -70,7 +72,7 @@ if (isset($_SESSION["user_id"])){ ?>
 <div class="center">
 <button onclick="redirectHome()" class="login_button" style="margin: 2vh">Home Page</button>
 </div>
-<footer class="footer" style="position:absolute; bottom: 0">
+<footer class="footer" style=" margin-top: 10vh">
     <div class="container">
         <p class="footer-text">Follow us on social media:</p>
         <ul class="social-icons">

@@ -45,9 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
             header('Location: ../login_signup_form.php');
             die();
         }
-
+        echo '<script type="text/javascript"> ("Signup was ok")</script>';
         create_user($pdo, $pwd, $username, $email);
-
         header("Location: ../login_signup_form.php?signup=success");
 
         $pdo = null;
