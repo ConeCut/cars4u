@@ -56,9 +56,11 @@ check_signup_errors();
 
 if (isset($_SESSION["user_id"])){ ?>
 
-    <h3>Logout</h3>
+    <h3 class="title" style="text-align: center">Logout</h3>
     <form action="includes/logout.inc.php" method="post" class="logoutForm">
-        <button>Logout</button>
+        <div class="center">
+        <button class="login_button">Logout</button>
+        </div>
     </form>
 
 <?php } else{
@@ -68,7 +70,7 @@ if (isset($_SESSION["user_id"])){ ?>
 <div class="center">
 <button onclick="redirectHome()" class="login_button" style="margin: 2vh">Home Page</button>
 </div>
-<footer class="footer">
+<footer class="footer" style="position:absolute; bottom: 0">
     <div class="container">
         <p class="footer-text">Follow us on social media:</p>
         <ul class="social-icons">

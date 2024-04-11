@@ -68,4 +68,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     set_post($pdo, $username, $post, $likes, $carinfo, $photo);
 }
-header('Location: ../../website/index.php');
+header('Location: ../../index.php');

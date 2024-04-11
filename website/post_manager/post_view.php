@@ -1,6 +1,6 @@
 <?php
-require_once 'login/includes/dbh.inc.php';
-require_once "login/includes/config_session.inc.php";
+require_once 'website/login/includes/dbh.inc.php';
+require_once "website/login/includes/config_session.inc.php";
 require_once 'reply_manager.php';
 require_once 'reply_view.php';
 
@@ -17,7 +17,7 @@ function justPost(){
             echo '<div class="post">
             <div class="postedBy">Posted by:' . " " .$post['username'] . ' at ' . $post["datetime"] . '</div>';
             echo '
-            <img src="img/' . $post['photo'] . '" alt="Car Photo" class="postImg">
+            <img src="website/img/' . $post['photo'] . '" alt="Car Photo" class="postImg">
             <p class="carInfo">' . $post['carinfo'] . '</p>
             <p class="postParagraph">' . $post['post'] . '</p>
             <div class="replyShow">' . showReplies() . '</div>';

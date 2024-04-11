@@ -19,7 +19,7 @@ require_once '../../website/login/includes/dbh.inc.php';
 if (!isset($_SESSION['user_id'])){
     echo '<p class="title">You must be logged in to see this page and post an article!</p>';
     echo '<button class = "homeButton" onclick="window.location.href = ';
-    echo "'../../website/index.php'";
+    echo "'../../index.php'";
     echo '">Go back to home page</button>';
 }else{
     echo '<br>';

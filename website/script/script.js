@@ -31,7 +31,7 @@ function redirectAbout(){
 }
 
 function redirectHome(){
-    window.location.href = "index.php"
+    window.location.href = "../../index.php"
 }
 function likesUp(){
     //TODO: Increase like count after running a SELECT query and putting in a variable for each click
