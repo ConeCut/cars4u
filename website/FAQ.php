@@ -51,6 +51,7 @@
     **Answer:** For inquiries or support, visit the "Contact" page in the dropdown menu on the navigation bar. There, you'll find information on how to get in touch with our team.
 <br>
     If you have any additional questions, feel free to reach out to us through our contact page or on our social media platforms. We appreciate your interest in cars4u!</p>
+<button class="homeButton" onclick="redirectHome()">Go home</button>
 <footer class="footer" style="position: absolute; bottom: 0">
     <div class="container">
         <p class="footer-text">Follow us on social media:</p>
@@ -66,6 +67,7 @@
 </footer>
 
 
+<script src="script/script.js"></script>
 
 </body>
 </html>

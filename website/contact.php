@@ -8,6 +8,8 @@
 
 </head>
 <body>
+<button class="homeButton" onclick="redirectHome()">Go home</button>
+
 <footer class="footer" style="position: absolute; bottom: 0">
     <div class="container">
         <p class="footer-text">Follow us on social media:</p>
@@ -23,6 +25,7 @@
 </footer>
 
 
+<script src="script/script.js"></script>
 
 </body>
 </html>

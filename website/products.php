@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+<button class="homeButton" onclick="redirectHome()">Go home</button>
 <footer class="footer" style="position: absolute; bottom: 0">
     <div class="container">
         <p class="footer-text">Follow us on social media:</p>
@@ -21,6 +22,6 @@
     </div>
 </footer>
 
-
+<script src="script/script.js"></script>
 </body>
 </html>

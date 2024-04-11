@@ -15,19 +15,19 @@ function burgerIcon(x) {
 }
 
 function redirectFAQ(){
-    window.location.href = "FAQ.php"
+    window.location.href = "website/FAQ.php"
 }
 
 function redirectContact(){
-    window.location.href = "contact.php"
+    window.location.href = "website/contact.php"
 }
 
 function redirectProducts(){
-    window.location.href = "products.php"
+    window.location.href = "website/products.php"
 }
 
 function redirectAbout(){
-    window.location.href = "about.php"
+    window.location.href = "website/about.php"
 }
 
 function redirectHome(){
