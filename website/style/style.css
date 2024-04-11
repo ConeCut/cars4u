@@ -78,6 +78,7 @@ main {
 
 .title {
     font-family: "OCR A Extended", serif;
+    font-size: 3vh;
 }
 
 .post{
@@ -134,3 +135,135 @@ main {
     font-size: 2vh;
     font-family: "OCR A Extended", serif;
 }
+
+.login_form_flex{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+input{
+    margin: 2vh;
+    width: 50vh;
+    height: 7.5vh;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+    border: 0.5vh solid black;
+    text-align: center;
+}
+
+.login_button{
+    margin: auto;
+    width: 10vh;
+    height: 5vh;
+}
+
+.logout_button{
+    background-color: white;
+    border: none;
+    padding: 2.5vh;
+    margin-right: auto;
+    font-size: 2.5vh;
+    text-decoration: none;
+    font-family: "OCR A Extended", serif;
+}
+
+.logout_button:hover {
+    background-color: lightgray;
+    transition: 0.4s;
+}
+
+.LogINnavContent{
+    padding: 2.5vh;
+    margin-right: 0;
+    font-size: 2.5vh;
+    text-decoration: none;
+    font-family: "OCR A Extended", serif;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-family: "OCR A Extended", serif;
+    font-size: 1.5vh;
+}
+
+.file_input {
+    border: 0.5vh solid black;
+    background-color: white;
+    width: 0.1vh;
+    height: 0.1vh;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.file_input + label {
+    font-size: 2vh;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    font-family: "OCR A Extended", serif;
+    border-radius: 1vh;
+    border: 0.5vh solid black;
+    margin: auto;
+    padding: 2vh;
+}
+
+.file_input:focus + label,
+.file_input + label:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 4vh 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+}
+
+.footer-text {
+    margin-bottom: 2vh; /* Adjust margin as needed */
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 2vh; /* Adjust margin as needed */
+}
+
+.social-icons .icon {
+    color: #fff;
+    font-size: 4vh; /* Adjust the size as needed */
+    text-decoration: none;
+}
+
+.social-icons .icon:hover {
+    color: #ffcc00;
+}
+
+

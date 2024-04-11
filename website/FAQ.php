@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>FAQ Cars4U</title>
+    <link href="../website/style/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <p>
@@ -49,5 +51,21 @@
     **Answer:** For inquiries or support, visit the "Contact" page in the dropdown menu on the navigation bar. There, you'll find information on how to get in touch with our team.
 <br>
     If you have any additional questions, feel free to reach out to us through our contact page or on our social media platforms. We appreciate your interest in cars4u!</p>
+<footer class="footer" style="position: absolute; bottom: 0">
+    <div class="container">
+        <p class="footer-text">Follow us on social media:</p>
+        <ul class="social-icons">
+            <li><a href="#" class="icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
+            <!-- Add more social media icons as needed -->
+        </ul>
+        <p class="footer-text">© 2024 Cars4U. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
 </body>
 </html>

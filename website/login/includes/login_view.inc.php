@@ -6,9 +6,9 @@ declare(strict_types=1);
 // All you need to do to check if user is logged in is to use an if function to see if the session ID is set or not, then you can freely change contents on the website
 function output_username(){
     if (isset($_SESSION["user_id"])){
-        echo "Your are logged in as " . $_SESSION["user_username"];
+        echo "<h1 class='title'>You are logged in as " . $_SESSION["user_username"] . '</h1>';
     } else{
-        echo "You are not logged in!";
+        echo "<h1 class='title'>You are not logged in! </h1>";
     }
 }
 

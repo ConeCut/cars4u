@@ -9,6 +9,7 @@ require_once 'login/includes/login_view.inc.php';
     <meta charset="UTF-8">
     <title>Cars4U</title>
     <link href="style/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <div class="nav_bar">
@@ -30,7 +31,8 @@ require_once 'login/includes/login_view.inc.php';
     <a href="index.php" class="navContent">Home</a>
     <a href="post_manager/post_opinions.php" class="navContent">Make your own post!</a>
     <?php if (isset($_SESSION['user_id'])){
-        echo '<p class="navContent">Logged in</p>';
+        echo '<p class="LogINnavContent">Logged in as ' . $_SESSION['user_username'];
+        echo '<form action="login/includes/logout.inc.php"><button type="submit" class="logout_button">Log Out';
     }else{
         echo '<a href="login/login_signup_form.php" class="navContent">Log in</a>';
     }?>
@@ -50,6 +52,20 @@ require_once 'login/includes/login_view.inc.php';
     </div>
 
 </main>
+
+<footer class="footer">
+    <div class="container">
+        <p class="footer-text">Follow us on social media:</p>
+        <ul class="social-icons">
+            <li><a href="#" class="icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
+            <!-- Add more social media icons as needed -->
+        </ul>
+        <p class="footer-text">© 2024 Cars4U. All rights reserved.</p>
+    </div>
+</footer>
 
 
 <script src="script/script.js"></script>
