@@ -7,7 +7,7 @@ require_once 'website/login/includes/login_view.inc.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cars4U</title>
+    <title>IMI ShitpostStatus</title>
     <link href="website/style/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,7 +24,7 @@ require_once 'website/login/includes/login_view.inc.php';
 
         <div id="dropDownContent">
             <div class="dropDownLink" onclick="redirectFAQ()">FAQ</div>
-            <div class="dropDownLink" onclick="redirectContact()">Contact us</div>
+            <div class="dropDownLink" onclick="redirectContact()">Rules</div>
             <div class="dropDownLink" onclick="redirectProducts()">Our products</div>
             <div class="dropDownLink" onclick="redirectAbout()">About</div>
         </div>
@@ -64,7 +64,7 @@ require_once 'website/login/includes/login_view.inc.php';
             <li><a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
             <!-- Add more social media icons as needed -->
         </ul>
-        <p class="footer-text">© 2024 Cars4U. All rights reserved.</p>
+        <p class="footer-text">© 2024 IMI SHITPOSTSTATUS. All rights reserved.</p>
     </div>
 </footer>
 

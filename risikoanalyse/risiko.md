@@ -1,4 +1,4 @@
-Risikoanalyse for cars4u Website
+Risikoanalyse for IMISHITPOSTSTATUS Website
 1. Server Downtime
 
 Risiko: Den primære risikoen er at nettsiden kan oppleve nedetid på grunn av serverfeil, nettverksproblemer eller feil i webserverkonfigurasjonen.

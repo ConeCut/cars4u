@@ -1,6 +1,6 @@
-Technical Documentation: cars4u Website
+Technical Documentation: IMISHITPOSTSTATUS Website
 
-This technical documentation provides an overview of the database structure and functionality of the cars4u website. The database consists of four tables, each serving a specific purpose in managing user data, posts, likes, replies, and other relevant information.
+This technical documentation provides an overview of the database structure and functionality of the IMISHITPOSTSTATUS website. The database consists of four tables, each serving a specific purpose in managing user data, posts, likes, replies, and other relevant information.
 Database Schema
 Table: likes_replies_users
 
@@ -34,11 +34,13 @@ Table: post_replies
     reply_upvotes: INT representing the number of upvotes the reply has received.
     id: Primary key (INT AUTO INCREMENT) uniquely identifying each reply.
 
+Table: 2 new tables I need to add //TODO
+
 Functionality
 
     User Authentication: Allows users to create accounts, log in, and stay authenticated using their username and password.
-    Post Creation: Enables users to create new posts containing information and images about their favorite cars.
+    Post Creation: Enables users to create new posts containing information and images about their favorite SHITPOST.
     Post Interaction: Users can like posts and reply to them, facilitating engagement and discussion within the community.
     Admin Privileges: Grants administrative privileges to designated users, allowing them to manage user accounts and oversee website operations.
 
-This technical documentation provides insight into the structure and functionality of the cars4u website's database, empowering developers to understand and maintain the system effectively.
+This technical documentation provides insight into the structure and functionality of the IMISHITPOSTSTATUS website's database, empowering developers to understand and maintain the system effectively.

@@ -82,7 +82,7 @@ if (isset($_SESSION["user_id"])){ ?>
             <li><a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
             <!-- Add more social media icons as needed -->
         </ul>
-        <p class="footer-text">© 2024 Cars4U. All rights reserved.</p>
+        <p class="footer-text">© 2024 IMI SHITPOSTSTATUS. All rights reserved.</p>
     </div>
 </footer>
 

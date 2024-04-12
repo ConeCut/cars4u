@@ -9,7 +9,7 @@ require_once '../../website/login/includes/dbh.inc.php';
 <head>
     <meta charset="UTF-8">
     <link href="../style/style.css" type="text/css" rel="stylesheet">
-    <title>Make A Post!</title>
+    <title>SHITPOST TIME</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body style="overflow: hidden">
@@ -17,7 +17,7 @@ require_once '../../website/login/includes/dbh.inc.php';
     <br>
 <?php
 if (!isset($_SESSION['user_id'])){
-    echo '<p class="title">You must be logged in to see this page and post an article!</p>';
+    echo '<p class="title">You must be logged in to see this page and post a shitpost status!</p>';
     echo '<button class = "homeButton" onclick="window.location.href = ';
     echo "'../../index.php'";
     echo '">Go back to home page</button>';
@@ -25,13 +25,13 @@ if (!isset($_SESSION['user_id'])){
     echo '<br>';
     echo '<form action="post_manager.php" method="post" enctype="multipart/form-data">';
     echo '<h1 class="title">Posting as ' . $_SESSION['user_username'] . '</h1><br>';
-    echo '<input name="Post" type="text" placeholder="Your post here..." required>';
-    echo '<input name="carinfo" type="text" placeholder="Car Make/Model/Engine" required>';
+    echo '<input name="Post" type="text" placeholder="Your shitpost comment here..." required>';
+    echo '<input name="carinfo" type="text" placeholder="Shitpost Title" required>';
     echo '<p class="title" style="margin-bottom: 2vh">Required Image</p>';
-    echo '<input class="file_input" name="photo" id="photo" type="file" placeholder="Required Image" required data-multiple-caption="{count} files selected" multiple>';
-    echo '<label for="photo" class="photoLabel"><span>Choose your picture</span></label>';
+    echo '<input class="file_input" name="photo" id="photo" type="file" placeholder="Required Shitpost Meme" required data-multiple-caption="{count} files selected" multiple>';
+    echo '<label for="photo" class="photoLabel"><span>Choose your shitpost</span></label>';
     //TODO: See todo in post manager
-    echo '<input type="submit" name="submit" class="title" placeholder="Submit your Post">';
+    echo '<input type="submit" name="submit" class="title" placeholder="Submit your shitpost">';
     echo '</form>';
 }
 
@@ -47,7 +47,7 @@ if (!isset($_SESSION['user_id'])){
             <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
         </ul>
-        <p class="footer-text">© 2024 Cars4U. All rights reserved.</p>
+        <p class="footer-text">© 2024 IMI SHITPOSTSTATUS. All rights reserved.</p>
     </div>
 </footer>
 <script src="../script/script.js"></script>

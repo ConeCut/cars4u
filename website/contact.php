@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cars4U Contacts</title>
+    <title>IMI SHITPOST RULES</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="style/style.css" type="text/css" rel="stylesheet">
 
@@ -20,7 +20,7 @@
             <li><a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a></li>
             <!-- Add more social media icons as needed -->
         </ul>
-        <p class="footer-text">© 2024 Cars4U. All rights reserved.</p>
+        <p class="footer-text">© 2024 IMISHITPOSTSTATUS. All rights reserved.</p>
     </div>
 </footer>
 
