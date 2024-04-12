@@ -243,6 +243,7 @@ button{
 }
 
 .footer-text {
+    font-family: "OCR A Extended", serif;
     margin-bottom: 2vh; /* Adjust margin as needed */
 }
 
@@ -266,4 +267,28 @@ button{
     color: #ffcc00;
 }
 
+.like_dislike_icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+i{
+    cursor: pointer;
+    margin: 2vh;
+}
+
+.like_dislike_counter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.like_counter{
+    margin-right: 20vh;
+    font-family: "OCR A Extended", serif;
+}
+
+.dislike_counter{
+    font-family: "OCR A Extended", serif;
+}

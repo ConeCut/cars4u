@@ -10,13 +10,14 @@ require_once 'website/login/includes/login_view.inc.php';
     <title>Cars4U</title>
     <link href="website/style/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="nav_bar">
     <div id="dropDown" onclick="burgerIcon(this); dropContent()">
 
 
-        <div class="bar1"></div>
+         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
 
