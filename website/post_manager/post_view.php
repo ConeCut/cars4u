@@ -32,7 +32,7 @@ function justPost()
                 echo '</div>';
                 echo '<script src="../../website/script/script.js"></script>';
             } else {
-                echo 'You must be logged in to like posts';
+                echo 'You must be logged in to like shitposts';
             }
             echo '</div>';
         }

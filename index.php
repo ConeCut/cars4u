@@ -30,7 +30,7 @@ require_once 'website/login/includes/login_view.inc.php';
         </div>
     </div>
     <a href="index.php" class="navContent">Home</a>
-    <a href="website/post_manager/post_opinions.php" class="navContent">Make your own post!</a>
+    <a href="website/post_manager/post_opinions.php" class="navContent">Make your own shitpost!</a>
     <?php if (isset($_SESSION['user_id'])){
         echo '<p class="LogINnavContent">Logged in as ' . $_SESSION['user_username'];
         echo '<form action="website/login/includes/logout.inc.php"><button type="submit" class="logout_button">Log Out';
@@ -42,7 +42,7 @@ require_once 'website/login/includes/login_view.inc.php';
 <main>
 
     <div class="mainForumBody">
-        <div class="title">Most Recent Posts</div>
+        <div class="title">Most Recent ShitPosts</div>
         <?php
         require 'website/post_manager/post_view.php';
         echo '<div class="postList">';
