@@ -38,7 +38,7 @@ function justPost()
                 echo '<script src="../../website/script/script.js"></script>';
             }
             else {
-                echo 'You must be logged in to like and comment shitposts';
+                echo '<p class="title">You must be logged in to like and comment shitposts';
             }
             echo '<div class="replyShow">' . showReplies($post['id']) . '</div>';
             echo '</div>';
