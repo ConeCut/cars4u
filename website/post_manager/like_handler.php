@@ -2,6 +2,8 @@
 require_once '../login/includes/dbh.inc.php';
 require_once '../login/includes/config_session.inc.php';
 global $pdo;
+$false = false;
+$true = true;
 
 
 $userId = $_SESSION['user_id'];
@@ -16,7 +18,8 @@ if ($type === "like")
 else if ($type === "dislike")
     dislikesUP($postId);
 
-function userLikedPost($userId, $postId) {
+function userLikedPost($userId, $postId)
+{
     global $pdo;
     $userId = $_SESSION['user_id'];
     $query = "SELECT COUNT(*) FROM user_likes WHERE user_id = :userId AND post_id = :postId";
@@ -26,7 +29,9 @@ function userLikedPost($userId, $postId) {
     $stmt->execute();
     return $stmt->fetchColumn() > 0;
 }
-function userdisLikedPost($userId, $postId) {
+
+function userdisLikedPost($userId, $postId)
+{
     global $pdo;
     $userId = $_SESSION['user_id'];
     $query = "SELECT COUNT(*) FROM user_dislikes WHERE user_id = :userId AND post_id = :postId";
@@ -52,8 +57,9 @@ function likesUp($postId)
         $stmt = $pdo->prepare($query);
         $stmt->bindParam(':postId', $postId, PDO::PARAM_INT);
         $stmt->execute();
+        echo 'Liked post';
     } else {
-        echo "You've already liked this post.";
+        likesDown($postId, $userId);
     }
 }
 
@@ -72,7 +78,42 @@ function dislikesUP($postId)
         $stmt = $pdo->prepare($query);
         $stmt->bindParam(':postId', $postId, PDO::PARAM_INT);
         $stmt->execute();
-    } else {
-        echo "You've already liked this post.";
+        echo 'Disiked post';
+    } else if (userdisLikedPost($userId, $postId)) {
+        dislikesDown($postId, $userId);
     }
+}
+
+function likesDown($postId, $userId)
+{
+    global $pdo;
+    $userId = $_SESSION['user_id'];
+    // Update post likes count
+    $query = "UPDATE posts SET likes = likes - 1 WHERE id = :postId";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(':postId', $postId, PDO::PARAM_INT);
+    $stmt->execute();
+    $query = "DELETE FROM user_likes WHERE post_id = :postId AND user_id = :userId";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(':postId', $postId, PDO::PARAM_INT);
+    $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
+    $stmt->execute();
+    echo "Like Removed";
+}
+
+function dislikesDown($postId, $userId)
+{
+    global $pdo;
+    $userId = $_SESSION['user_id'];
+    // Update post likes count
+    $query = "UPDATE posts SET dislikes = dislikes - 1 WHERE id = :postId";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(':postId', $postId, PDO::PARAM_INT);
+    $stmt->execute();
+    $query = "DELETE FROM user_dislikes WHERE post_id = :postId AND user_id = :userId";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(':postId', $postId, PDO::PARAM_INT);
+    $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
+    $stmt->execute();
+    echo "Dislike Removed";
 }

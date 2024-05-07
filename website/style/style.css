@@ -28,7 +28,7 @@ body {
 }
 
 #dropDownContent {
-    position: fixed;
+    position: absolute;
     display: none;
     background-color: white;
     justify-content: left;
@@ -291,4 +291,22 @@ i{
 
 .dislike_counter{
     font-family: "OCR A Extended", serif;
+}
+
+.reply_form{
+    display: flex;
+    justify-content: center;
+}
+
+.replyBox{
+display: flex
+}
+
+.reply{
+    background-color: grey;
+    width: 100%;
+    padding: 2vh;
+    border-radius: 2vh;
+    border: 0.5vh solid black;
+    margin: 1vh;
 }

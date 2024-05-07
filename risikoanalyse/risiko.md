@@ -1,5 +1,5 @@
 Risikoanalyse for IMISHITPOSTSTATUS Website
-1. Server Downtime
+1. Server Downtime/Unable to access server
 
 Risiko: Den primære risikoen er at nettsiden kan oppleve nedetid på grunn av serverfeil, nettverksproblemer eller feil i webserverkonfigurasjonen.
 

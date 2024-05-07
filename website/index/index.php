@@ -1,14 +1,14 @@
 <?php
-require_once 'website/login/includes/config_session.inc.php';
-require_once 'website/login/includes/signup_view.inc.php';
-require_once 'website/login/includes/login_view.inc.php';
+require_once '../login/includes/config_session.inc.php';
+require_once '../login/includes/signup_view.inc.php';
+require_once '../login/includes/login_view.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>IMI ShitpostStatus</title>
-    <link href="website/style/style.css" type="text/css" rel="stylesheet">
+    <link href="../style/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -30,12 +30,12 @@ require_once 'website/login/includes/login_view.inc.php';
         </div>
     </div>
     <a href="index.php" class="navContent">Home</a>
-    <a href="website/post_manager/post_opinions.php" class="navContent">Make your own shitpost!</a>
+    <a href="../post_manager/post_opinions.php" class="navContent">Make your own shitpost!</a>
     <?php if (isset($_SESSION['user_id'])){
         echo '<p class="LogINnavContent">Logged in as ' . $_SESSION['user_username'];
-        echo '<form action="website/login/includes/logout.inc.php"><button type="submit" class="logout_button">Log Out';
+        echo '<form action="../login/includes/logout.inc.php"><button type="submit" class="logout_button">Log Out';
     }else{
-        echo '<a href="website/login/login_signup_form.php" class="navContent">Log in</a>';
+        echo '<a href="../login/login_signup_form.php" class="navContent">Log in</a>';
     }?>
 </div>
 
@@ -44,7 +44,7 @@ require_once 'website/login/includes/login_view.inc.php';
     <div class="mainForumBody">
         <div class="title">Most Recent ShitPosts</div>
         <?php
-        require 'website/post_manager/post_view.php';
+        require '../post_manager/post_view.php';
         echo '<div class="postList">';
         justPost();
         echo '</div>';
@@ -69,6 +69,6 @@ require_once 'website/login/includes/login_view.inc.php';
 </footer>
 
 
-<script src="website/script/script.js"></script>
+<script src="../script/script.js"></script>
 </body>
 </html>

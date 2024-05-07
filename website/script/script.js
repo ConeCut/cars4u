@@ -31,7 +31,7 @@ function redirectAbout() {
 }
 
 function redirectHome() {
-    window.location.href = "../../index.php"
+    window.location.href = "../index/index.php"
 }
 
 //input code for files
@@ -55,20 +55,16 @@ Array.prototype.forEach.call(inputs, function (input) {
 });
 
 function likesUp(e) {
-
     let request = new XMLHttpRequest();
     let likeCounter = e.parentElement.parentElement.querySelector(".like_counter")
-
     request.addEventListener("load", (e) => {
-        if (request.responseText === "You've already liked this post.") {
-            alert('You already liked this post')
-            console.log(request.responseText)
-            likeCounter.innerHTML = String(Number(likeCounter.innerHTML) + 0);
-        } else{
+        if (request.responseText === "Liked post") {
             likeCounter.innerHTML = String(Number(likeCounter.innerHTML) + 1);
+        } else if (request.responseText === "Like Removed"){
+            likeCounter.innerHTML = String(Number(likeCounter.innerHTML) - 1);
         }
     })
-    request.open("POST", "website/post_manager/like_handler.php");
+    request.open("POST", "../post_manager/like_handler.php");
     request.send(
         JSON.stringify({
                 "postId": e.getAttribute("post-id"),
@@ -82,17 +78,16 @@ function dislikesUp(e) {
     let request = new XMLHttpRequest();
     let dislikeCounter = e.parentElement.parentElement.querySelector(".dislike_counter")
     request.addEventListener("load", (e) => {
-        if (request.responseText === "You've already liked this post.") {
-            alert('You already disliked this post')
-            console.log(request.responseText)
-            dislikeCounter.innerHTML = String(Number(dislikeCounter.innerHTML) + 0);
-        } else {
+        if (request.responseText === "Disliked Post") {
             console.log(request.responseText)
             dislikeCounter.innerHTML = String(Number(dislikeCounter.innerHTML) + 1);
+        } else if (request.responseText === "Dislike removed"){
+            console.log(request.responseText)
+            dislikeCounter.innerHTML = String(Number(dislikeCounter.innerHTML) - 1);
         }
     })
 
-    request.open("POST", "website/post_manager/like_handler.php");
+    request.open("POST", "../post_manager/like_handler.php");
     request.send(
         JSON.stringify({
                 "postId": e.getAttribute("post-id"),
