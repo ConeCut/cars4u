@@ -78,10 +78,10 @@ function dislikesUp(e) {
     let request = new XMLHttpRequest();
     let dislikeCounter = e.parentElement.parentElement.querySelector(".dislike_counter")
     request.addEventListener("load", (e) => {
-        if (request.responseText === "Disliked Post") {
+        if (request.responseText === "Disliked post") {
             console.log(request.responseText)
             dislikeCounter.innerHTML = String(Number(dislikeCounter.innerHTML) + 1);
-        } else if (request.responseText === "Dislike removed"){
+        } else if (request.responseText === "Dislike Removed"){
             console.log(request.responseText)
             dislikeCounter.innerHTML = String(Number(dislikeCounter.innerHTML) - 1);
         }
