@@ -78,7 +78,7 @@ function dislikesUP($postId)
         $stmt = $pdo->prepare($query);
         $stmt->bindParam(':postId', $postId, PDO::PARAM_INT);
         $stmt->execute();
-        echo 'Disiked post';
+        echo 'Disliked post';
     } else if (userdisLikedPost($userId, $postId)) {
         dislikesDown($postId, $userId);
     }
