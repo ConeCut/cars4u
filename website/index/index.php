@@ -33,7 +33,7 @@ require_once '../login/includes/login_view.inc.php';
     <a href="../post_manager/post_opinions.php" class="navContent">Make your own shitpost!</a>
     <?php if (isset($_SESSION['user_id'])){
         echo '<p class="LogINnavContent">Logged in as ' . $_SESSION['user_username'];
-        echo '<form action="../login/includes/logout.inc.php"><button type="submit" class="logout_button">Log Out';
+        echo '<form action="../login/includes/logout.inc.php"><button type="submit" class="logout_button">Log Out</button>';
     }else{
         echo '<a href="../login/login_signup_form.php" class="navContent">Log in</a>';
     }?>
