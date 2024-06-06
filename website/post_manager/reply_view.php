@@ -12,10 +12,10 @@ function showReplies($postId){
     if ($result2) {
         foreach ($result2 as $reply) {
             echo '<div class="replyBox">';
-            echo '<div class="reply">' . '<p class="postParagraph"> - Comment by ' . $reply['replied_by'] . '</p><p class="title">' . $reply['post_reply'] . '</div>';
+            echo '<div class="reply">' . '<p class="postParagraph"> - Comment by ' . $reply['replied_by'] . '</p><p class="reply_text">' . $reply['post_reply'] . '</p></div>';
             echo '</div>';
         }
     } else{
-        echo '<p class="title">Post has no replies yet, be the first to comment!';
+        echo '<p class="reply_text">Post has no replies yet, be the first to comment!';
     }
 }

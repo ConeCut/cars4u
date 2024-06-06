@@ -18,8 +18,8 @@ function justPost()
             <div class="postedBy">Posted by:' . " " . $post['username'] . ' at ' . $post["datetime"] . '</div>';
             echo '
             <img src="../img/' . $post['photo'] . '" alt="Car Photo" class="postImg">
-            <p class="carInfo">' . $post['carinfo'] . '</p>
-            <p class="postParagraph">' . $post['post'] . '</p>';
+            <div class="carinfobox"><p class="carInfo">' . $post['carinfo'] . '</p></div>
+            <div class="postParagraphBox"><p class="postParagraph">' . $post['post'] . '</p></div>';
             if (isset($_SESSION["user_id"])) {
                 echo '<div class="like_dislike_icons">';
                 echo '<i class="fa fa-thumbs-up" aria-hidden="true" onclick="likesUp(this)" post-id="' . $post["id"] . '">Like</i>';

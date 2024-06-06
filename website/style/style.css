@@ -99,6 +99,10 @@ main {
     padding: 2vh;
 }
 
+.postParagraphBox{
+    word-wrap: break-word;
+}
+
 .postedBy{
     text-align: left;
     font-size: 2vh;
@@ -299,7 +303,10 @@ i{
 }
 
 .replyBox{
-display: flex
+    display: flex;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .reply{
@@ -309,4 +316,16 @@ display: flex
     border-radius: 2vh;
     border: 0.5vh solid black;
     margin: 1vh;
+}
+
+.carinfobox{
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.carInfo{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    text-align: center;
 }
